@@ -1,0 +1,214 @@
+{
+  "lane": 2,
+  "feature_window": [
+    "2026-03-02",
+    "2026-03-31"
+  ],
+  "outcome_window": [
+    "2026-04-01",
+    "2026-04-30"
+  ],
+  "decline_ratio_strictly_below": 0.8,
+  "feature_rows": 62397,
+  "evaluation_rows": 50641,
+  "undefined_momentum_rows_excluded": 0,
+  "base_rate": 0.47345036630398296,
+  "source_checks": [
+    {
+      "partition": "2026-03",
+      "n_source_rows": 9841378,
+      "first_date": "2026-03-01",
+      "last_date": "2026-03-31",
+      "extra_duplicate_rows": 0,
+      "missing_gsc_rows_in_window": 0
+    },
+    {
+      "partition": "2026-04",
+      "n_source_rows": 10424730,
+      "first_date": "2026-04-01",
+      "last_date": "2026-04-30",
+      "extra_duplicate_rows": 0,
+      "missing_gsc_rows_in_window": 0
+    }
+  ],
+  "distributions": [
+    {
+      "signal": "impressions_feature_30d",
+      "count": 62397.0,
+      "mean": 3618.4263987051,
+      "std": 7578.4863072389,
+      "min": 100.0,
+      "50%": 1295.0,
+      "90%": 8444.6,
+      "99%": 35103.08,
+      "max": 239235.0,
+      "missing_n": 0
+    },
+    {
+      "signal": "momentum_pct",
+      "count": 62397.0,
+      "mean": 15.3797787759,
+      "std": 95.5855451142,
+      "min": -99.8942165642,
+      "50%": -2.1968736798,
+      "90%": 82.0227065614,
+      "99%": 327.1670190275,
+      "max": 6100.0,
+      "missing_n": 0
+    },
+    {
+      "signal": "weighted_position_feature_30d",
+      "count": 62397.0,
+      "mean": 13.1537808831,
+      "std": 12.9478997441,
+      "min": 0.0224215247,
+      "50%": 7.7868400315,
+      "90%": 30.8065072668,
+      "99%": 63.805464543,
+      "max": 90.7446808511,
+      "missing_n": 0
+    },
+    {
+      "signal": "ctr_feature_30d_pct",
+      "count": 62397.0,
+      "mean": 0.2472063296,
+      "std": 0.3512206672,
+      "min": 0.0,
+      "50%": 0.1464128843,
+      "90%": 0.6120181547,
+      "99%": 1.5686767014,
+      "max": 11.5,
+      "missing_n": 0
+    }
+  ],
+  "verdicts": {
+    "volume": "MIXED",
+    "momentum": "CONFIRMED",
+    "position": "MIXED",
+    "ctr_by_position": "MIXED"
+  },
+  "volume_buckets": [
+    {
+      "bucket": "100\u2013499",
+      "n": 7413,
+      "declining_n": 2464,
+      "decline_rate_pct": 33.238904627
+    },
+    {
+      "bucket": "500\u20132,999",
+      "n": 24934,
+      "declining_n": 13054,
+      "decline_rate_pct": 52.3542151279
+    },
+    {
+      "bucket": "3,000\u201329,999",
+      "n": 17455,
+      "declining_n": 8121,
+      "decline_rate_pct": 46.5253509023
+    },
+    {
+      "bucket": "30,000+",
+      "n": 839,
+      "declining_n": 337,
+      "decline_rate_pct": 40.1668653159
+    }
+  ],
+  "momentum_buckets": [
+    {
+      "bucket": "<= -50%",
+      "n": 4171,
+      "declining_n": 3375,
+      "decline_rate_pct": 80.9158475186
+    },
+    {
+      "bucket": "(-50%, -20%]",
+      "n": 11439,
+      "declining_n": 6948,
+      "decline_rate_pct": 60.7395751377
+    },
+    {
+      "bucket": "(-20%, 0%]",
+      "n": 9976,
+      "declining_n": 4921,
+      "decline_rate_pct": 49.3283881315
+    },
+    {
+      "bucket": "(0%, 20%]",
+      "n": 8398,
+      "declining_n": 3428,
+      "decline_rate_pct": 40.8192426768
+    },
+    {
+      "bucket": "> 20%",
+      "n": 16657,
+      "declining_n": 5304,
+      "decline_rate_pct": 31.8424686318
+    }
+  ],
+  "position_buckets": [
+    {
+      "bucket": "above 0 to 3",
+      "n": 4996,
+      "declining_n": 2786,
+      "decline_rate_pct": 55.7646116894
+    },
+    {
+      "bucket": "above 3\u201310",
+      "n": 25666,
+      "declining_n": 11623,
+      "decline_rate_pct": 45.2855918336
+    },
+    {
+      "bucket": "above 10\u201320",
+      "n": 9418,
+      "declining_n": 4497,
+      "decline_rate_pct": 47.7489912933
+    },
+    {
+      "bucket": "above 20",
+      "n": 10561,
+      "declining_n": 5070,
+      "decline_rate_pct": 48.0068175362
+    }
+  ],
+  "ctr_by_position": [
+    {
+      "position_bucket": "above 0 to 3",
+      "n": 6091,
+      "median_page_ctr_pct": 0.2125797174,
+      "impressions_n": 29037789.0,
+      "clicks_n": 105926.0,
+      "pooled_ctr_pct": 0.3647867267
+    },
+    {
+      "position_bucket": "above 3\u201310",
+      "n": 30820,
+      "median_page_ctr_pct": 0.1962951877,
+      "impressions_n": 121208801.0,
+      "clicks_n": 378318.0,
+      "pooled_ctr_pct": 0.3121208995
+    },
+    {
+      "position_bucket": "above 10\u201320",
+      "n": 12033,
+      "median_page_ctr_pct": 0.1272264631,
+      "impressions_n": 24910216.0,
+      "clicks_n": 80218.0,
+      "pooled_ctr_pct": 0.3220285203
+    },
+    {
+      "position_bucket": "above 20",
+      "n": 13453,
+      "median_page_ctr_pct": 0.0232180172,
+      "impressions_n": 50622146.0,
+      "clicks_n": 68262.0,
+      "pooled_ctr_pct": 0.1348461205
+    }
+  ],
+  "limitations": [
+    "One exploratory cutoff; no held-out evaluation",
+    "Pages within a client may share shocks",
+    "Decline proxy does not measure refresh benefit",
+    "Complete-window eligibility limits generalization"
+  ]
+}
